@@ -5,9 +5,9 @@ welcome to my CART253 course website. this website is to collect together and sh
 ## Prototypes
 
 ## Links
-[youtube](https://www.youtube.com/@Lucagarreffazoom) 
+[Youtube](https://www.youtube.com/@Lucagarreffazoom) 
 ## Journal
-[My Reflective Journal](journal.md) 
+[My Reflective Journal](./journal.md) 
 
 
 

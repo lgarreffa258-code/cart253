@@ -4,3 +4,8 @@ I’ve learned a lot about Markdown and how to use it for my websites, especiall
 One thing I had a lot of trouble with was needing to commit my work to main for it to actually show up on the website. It was sometimes frustrating because I expected my changes to appear right away, but I learned that I had to make sure everything was committed properly before I could see the changes online.
 Overall, I enjoyed learning about Markdown and working with websites in this way. I hope that what I made can make other people interested in coding and encourage them to try it for themselves. My aspirations for this are to become comfortable enough with Markdown and coding that I can do things like this easily and on a bigger scale. I want to be able to understand what I am doing without struggling as much and eventually create bigger and more complicated websites while still feeling confident about the process.
 ![screenshot of page](images/Screenshot.png)
+
+
+## september 22 2026
+This assignment was actually very entertaining. I had a lot of fun trying to learn everything and figure it out. Once I got the hang of things it felt very rewarding. I learned how to make it so that colors chnage as time goes on. I also learned all the different ways you can choose a color for all the different possible shapes. This aasigment allowed me to learn where everything is located while using the variables. One Challenge i faced was trying to figure put everything in the uter wilds themed drawing. I had trouble with the space ship especially but also with making the sun go from orange to red. Overall this was a great experience and it really helped me to learn hands on how the coding works.
+ 

@@ -31,8 +31,8 @@ function draw() {
     fill(sunX.r, sunX.g, sunX.b);
     circle(500, 300, 500);
     pop()
-    sunX.g = sunX.g - 1;
-    sunX.b = sunX.b - 3;
+    sunX.g = sunX.g - 0.6;
+    sunX.b = sunX.b - 1;
 
 
     //giants deep basically water planet
@@ -126,9 +126,6 @@ function draw() {
     pop();
 
 
-    time.sleep(1);
-    sunX.r = sunX.r - 5;
-    sunX.b = sunX.b + 5;
 
 
 

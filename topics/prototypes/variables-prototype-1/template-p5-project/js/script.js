@@ -9,9 +9,6 @@
 
 // the sun or moon depending how it feels
 let lightsource = {
-  // Position and size
-  x: 200,
-  y: 200,
   size: 100,
   // Colour
   fill: {
@@ -23,9 +20,9 @@ let lightsource = {
 
 //the sky as time changes
 let sky = {
-    r : 160,
-    g : 180,
-    b : 200,
+    r : 0,
+    g : 0,
+    b : 255,
 }
 /**
  * Create the canvas
@@ -39,6 +36,39 @@ function setup() {
  */
 function draw() {
     background(sky.r, sky.g, sky.b)
+    let sundistance = dist(mouseX, mouseY, width/2, height/2);
+    let suncolor = map(mouseY, 0, 500, 255, 0)
+    let skycolor = map(mouseY, 0, 150, 255, 200)
+    
+    push();
+    noStroke();
+    sky.r = -skycolor;
+    sky.g = 0;
+    sky.b = skycolor;
+    fill(sky.r, sky.g, sky.b);
+    rect(0, 0, 500, 500);
+    pop();
+
+    push();
+    noStroke();
+    lightsource.fill.r = suncolor;
+    lightsource.fill.g = suncolor;
+    lightsource.fill.b = 0;
+    fill(lightsource.fill.r, lightsource.fill.g, lightsource.fill.b);
+    ellipse(mouseX, mouseY, lightsource.size, lightsource.size);
+    pop();
+
+    push();
+    noStroke();
+    fill(0, 150, 0);
+    rect(0, 400, 500, 100);
+    pop();
+
+
+
     
 
+
 }
+
+

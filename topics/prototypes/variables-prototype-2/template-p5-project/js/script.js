@@ -41,10 +41,12 @@ let planetblue = {
  *time to create some stars and planets
 */
 function draw() {
+    frameRate(600);
+
 background("rgb(13, 4, 42)");
 let explode = dist(mouseX, mouseY, planetred.x, planetred.y);
 if (explode < 75){
-    planetred.x = random([100],[100],true);
+    planetred.x = random([95],[95],true);
 }
 if (explode < 60){
     planetred.color = "rgb(244, 244, 249)";

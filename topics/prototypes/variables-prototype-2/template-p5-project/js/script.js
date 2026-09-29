@@ -7,12 +7,6 @@
 
 "use strict";
 
-/**
- *making myself a canvas
-*/
-function setup() {
-    createCanvas(500, 500);
-}
 let spaceship = {
     x : 250,
     y : 250,
@@ -37,6 +31,13 @@ let planetblue = {
     color : "rgb(0, 0, 255)",
 }
 
+
+/**
+ *making myself a canvas
+*/
+function setup() {
+    createCanvas(500, 500);
+}
 /**
  *time to create some stars and planets
 */
@@ -46,6 +47,7 @@ background("rgb(13, 4, 42)");
 let explode = dist(mouseX, mouseY, planetred.x, planetred.y);
 let explode2 = dist(mouseX, mouseY, planetgreen.x, planetgreen.y);
 let explode3 = dist(mouseX, mouseY, planetblue.x, planetblue.y);
+
 //what happens when the spacehip gets close
 if (explode < 105){
     planetred.x = random(95,105,true);
@@ -74,6 +76,7 @@ if (explode3 < 60){
 if (explode3 < 30){
     planetblue.size = 0;
 }
+
 //spaceship
 spaceship.x = mouseX-25;
 spaceship.y = mouseY-5;
@@ -111,19 +114,19 @@ fill(planetblue.color);
 circle(planetblue.x, planetblue.y, planetblue.size)
 pop();
 
-//trying to reset the game
+//reset the game
 if (mouseIsPressed){
     console.log("mouse was pressed")
-    planetred.x = 100;
-    planetred.y = 100;
+    planetred.x = random(10, 450);
+    planetred.y = random(10, 450);
     planetred.size = 50;
     planetred.color = "rgb(255, 0, 0)";
-    planetgreen.x = 400;
-    planetgreen.y = 400;
+    planetgreen.x = random(10, 450);
+    planetgreen.y = random(10, 450);
     planetgreen.size = 50;
     planetgreen.color = "rgb(0, 255, 0)";
-    planetblue.x = 300;
-    planetblue.y = 200;
+    planetblue.x = random(10, 450);
+    planetblue.y = random(10, 450);
     planetblue.size = 50;
     planetblue.color = "rgb(0, 0, 255)";
 }   

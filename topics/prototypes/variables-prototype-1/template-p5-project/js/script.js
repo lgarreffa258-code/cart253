@@ -1,5 +1,5 @@
 /**
- * Title of Project
+ * Timezones
  * Luca Garreffa
  * 
  * controlling the day/night
@@ -39,7 +39,7 @@ function draw() {
     let sundistance = dist(mouseX, mouseY, width/2, height/2);
     let suncolor = map(mouseY, 0, 500, 255, 0)
     let skycolor = map(mouseY, 0, 150, 255, 200)
-    
+    //making the sky color aka time of day
     push();
     noStroke();
     sky.r = -skycolor;
@@ -48,7 +48,7 @@ function draw() {
     fill(sky.r, sky.g, sky.b);
     rect(0, 0, 500, 500);
     pop();
-
+    //control the sun/moon
     push();
     noStroke();
     lightsource.fill.r = suncolor;
@@ -57,18 +57,12 @@ function draw() {
     fill(lightsource.fill.r, lightsource.fill.g, lightsource.fill.b);
     ellipse(mouseX, mouseY, lightsource.size, lightsource.size);
     pop();
-
+    //touch grass
     push();
     noStroke();
     fill(0, 100, 0);
     rect(0, 400, 500, 100);
     pop();
-
-
-
-    
-
-
 }
 
 

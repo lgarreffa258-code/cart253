@@ -41,18 +41,38 @@ let planetblue = {
  *time to create some stars and planets
 */
 function draw() {
-    frameRate(600);
 
 background("rgb(13, 4, 42)");
 let explode = dist(mouseX, mouseY, planetred.x, planetred.y);
+let explode2 = dist(mouseX, mouseY, planetgreen.x, planetgreen.y);
+let explode3 = dist(mouseX, mouseY, planetblue.x, planetblue.y);
+//what happens when the spacehip gets close
 if (explode < 75){
-    planetred.x = random([95],[95],true);
+    planetred.x = random(95,105,true);
 }
 if (explode < 60){
     planetred.color = "rgb(244, 244, 249)";
 }
 if (explode < 30){
     planetred.size = 0;
+}
+if (explode2 < 75){
+    planetgreen.x = random(395,405,true);
+}
+if (explode2 < 60){
+    planetgreen.color = "rgb(244, 244, 249)";
+}
+if (explode2 < 30){
+    planetgreen.size = 0;
+}
+if (explode3 < 75){
+    planetblue.x = random(295,305,true);
+}
+if (explode3 < 60){
+    planetblue.color = "rgb(244, 244, 249)";
+}
+if (explode3 < 30){
+    planetblue.size = 0;
 }
 //spaceship
 spaceship.x = mouseX-25;

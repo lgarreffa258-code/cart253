@@ -110,5 +110,19 @@ circle(planetgreen.x, planetgreen.y, planetgreen.size)
 fill(planetblue.color);
 circle(planetblue.x, planetblue.y, planetblue.size)
 pop();
-
 }
+//trying to reset the game
+(mouseIsPressed)=>{
+    planetred.x = 100;
+    planetred.y = 100;
+    planetred.size = 50;
+    planetred.color = "rgb(255, 0, 0)";
+    planetgreen.x = 400;
+    planetgreen.y = 400;
+    planetgreen.size = 50;
+    planetgreen.color = "rgb(0, 255, 0)";
+    planetblue.x = 300;
+    planetblue.y = 200;
+    planetblue.size = 50;
+    planetblue.color = "rgb(0, 0, 255)";
+}   

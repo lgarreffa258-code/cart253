@@ -47,7 +47,7 @@ let explode = dist(mouseX, mouseY, planetred.x, planetred.y);
 let explode2 = dist(mouseX, mouseY, planetgreen.x, planetgreen.y);
 let explode3 = dist(mouseX, mouseY, planetblue.x, planetblue.y);
 //what happens when the spacehip gets close
-if (explode < 75){
+if (explode < 105){
     planetred.x = random(95,105,true);
 }
 if (explode < 60){
@@ -56,7 +56,7 @@ if (explode < 60){
 if (explode < 30){
     planetred.size = 0;
 }
-if (explode2 < 75){
+if (explode2 < 105){
     planetgreen.x = random(395,405,true);
 }
 if (explode2 < 60){
@@ -65,7 +65,7 @@ if (explode2 < 60){
 if (explode2 < 30){
     planetgreen.size = 0;
 }
-if (explode3 < 75){
+if (explode3 < 105){
     planetblue.x = random(295,305,true);
 }
 if (explode3 < 60){
@@ -110,9 +110,10 @@ circle(planetgreen.x, planetgreen.y, planetgreen.size)
 fill(planetblue.color);
 circle(planetblue.x, planetblue.y, planetblue.size)
 pop();
-}
+
 //trying to reset the game
-(mouseIsPressed)=>{
+if (mouseIsPressed){
+    console.log("mouse was pressed")
     planetred.x = 100;
     planetred.y = 100;
     planetred.size = 50;
@@ -126,3 +127,4 @@ pop();
     planetblue.size = 50;
     planetblue.color = "rgb(0, 0, 255)";
 }   
+}

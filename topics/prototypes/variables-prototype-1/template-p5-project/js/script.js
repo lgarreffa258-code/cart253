@@ -60,7 +60,7 @@ function draw() {
 
     push();
     noStroke();
-    fill(0, 150, 0);
+    fill(0, 100, 0);
     rect(0, 400, 500, 100);
     pop();
 

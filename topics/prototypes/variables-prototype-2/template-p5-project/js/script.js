@@ -18,12 +18,40 @@ let spaceship = {
     y : 250,
     
 }
+let planetred = {
+    x :100,
+    y :100,
+    size : 50,
+    color : "rgb(255, 0, 0)",
+}
+let planetgreen = {
+    x :400,
+    y :400,
+    size : 50,
+    color : "rgb(0, 255, 0)",
+}
+let planetblue = {
+    x :300,
+    y :200,
+    size : 50,
+    color : "rgb(0, 0, 255)",
+}
 
 /**
  *time to create some stars and planets
 */
 function draw() {
 background("rgb(13, 4, 42)");
+let explode = dist(mouseX, mouseY, planetred.x, planetred.y);
+if (explode < 75){
+    planetred.x = random([100],[100],true);
+}
+if (explode < 60){
+    planetred.color = "rgb(244, 244, 249)";
+}
+if (explode < 30){
+    planetred.size = 0;
+}
 //spaceship
 spaceship.x = mouseX-25;
 spaceship.y = mouseY-5;
@@ -53,11 +81,12 @@ circle(65, 370, 5)
 
 //the planets
 push();
-fill("rgb(255, 0, 0)");
-circle(100, 100, 50)
-fill("rgb(0, 255, 0)");
-circle(400, 400, 50)
-fill("rgb(0, 0, 255)");
-circle(300, 200, 50)
+fill(planetred.color);
+circle(planetred.x, planetred.y, planetred.size)
+fill(planetgreen.color);
+circle(planetgreen.x, planetgreen.y, planetgreen.size)
+fill(planetblue.color);
+circle(planetblue.x, planetblue.y, planetblue.size)
 pop();
+
 }

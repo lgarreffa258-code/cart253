@@ -13,7 +13,14 @@ welcome to my CART253 course website. this website is to collect together and sh
 [Smiley face](images/smile.png)
 . I felt like I got intense in the other ones so I made a [happy face.](http://127.0.0.1:5500/topics/prototypes/instructions-prototype-3/template-p5-project/)
 
-[Hyper Speed]
+[Hyper Speed](images/warp%20speed.png)
+ is meant to be kind of like traveling through warp speed in star wars or other space related [media.](http://127.0.0.1:5500/topics/prototypes/variables-prototype-3/template-p5-project/)
+
+[Timezones](images/timezones.png)
+ is exactly what it sounds like. Depending on the location of the mouse the time of day/night [changes.](http://127.0.0.1:5500/topics/prototypes/variables-prototype-1/template-p5-project/)
+
+[Planet Eater](images/planet%20eater.png)
+ is one im especially proud of as it is kind of a little game where you eat the planets and then click to [reset.](http://127.0.0.1:5500/topics/prototypes/variables-prototype-2/template-p5-project/)
 
 ## Links
 [Youtube](https://www.youtube.com/@Lucagarreffazoom) 

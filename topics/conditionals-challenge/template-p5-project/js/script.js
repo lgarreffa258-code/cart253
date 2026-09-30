@@ -39,7 +39,7 @@ function draw() {
 
   // move puck
   movePuck();
-  
+
   // Draw the user and puck
   drawUser();
   drawPuck();
@@ -79,22 +79,22 @@ function movePuck() {
   //distance between puck and user
   const d = dist(user.x, user.y, puck.x, puck.y);
 
-  const overlap = (d < user.size/2 + puck.size/2);
+  const overlap = (d < user.size / 2 + puck.size / 2);
 
   if (overlap) {
     let positiondifferncex = user.x - puck.x
     let positiondifferncey = user.y - puck.y
-    if (positiondifferncex<0) {
-        puck.x = puck.x + 2
+    if (positiondifferncex < 0) {
+      puck.x = puck.x + 2
     }
-    if (positiondifferncex>-1) {
-        puck.x = puck.x - 2
+    if (positiondifferncex > -1) {
+      puck.x = puck.x - 2
     }
-    if (positiondifferncey<0) {
-        puck.y = puck.y + 2
+    if (positiondifferncey < 0) {
+      puck.y = puck.y + 2
     }
-    if (positiondifferncey>-1) {
-        puck.y = puck.y - 2
+    if (positiondifferncey > -1) {
+      puck.y = puck.y - 2
     }
   }
 }

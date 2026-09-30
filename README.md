@@ -13,6 +13,8 @@ welcome to my CART253 course website. this website is to collect together and sh
 [Smiley face](images/smile.png)
 . I felt like I got intense in the other ones so I made a [happy face.](http://127.0.0.1:5500/topics/prototypes/instructions-prototype-3/template-p5-project/)
 
+[Hyper Speed]
+
 ## Links
 [Youtube](https://www.youtube.com/@Lucagarreffazoom) 
 ## Journal

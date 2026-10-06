@@ -1,15 +1,14 @@
 /**
- * Title of Project
- * Author Name
+ * hyperspeed
+ *  Luca Garreffa
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * time to travel
  */
 
 "use strict";
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+ * made space
 */
 function setup() {
 createCanvas(1000, 1000);
@@ -22,7 +21,7 @@ let spaceship = {
 
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+ * made the univers
 */
 function draw() {
 background("rgb(13, 4, 42)");

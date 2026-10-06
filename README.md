@@ -27,8 +27,13 @@ Smiley Face. I felt like I got intense in the other ones so I made a [happy face
 
 ![Planet Eater](images/planet%20eater.png)
  
- Planet Eateris one im especially proud of as it is kind of a little game where you eat the planets and then click to [reset.](https://lgarreffa258-code.github.io/cart253/topics/prototypes/variables-prototype-2/planeteater/)
+ Planet Eater is one im especially proud of as it is kind of a little game where you eat the planets and then click to [reset.](https://lgarreffa258-code.github.io/cart253/topics/prototypes/variables-prototype-2/planeteater/)
  [code](https://github.com/lgarreffa258-code/cart253/blob/main/topics/prototypes/variables-prototype-2/planeteater/js/script.js)
+
+ ![Remote Sun](images/Remote%20Sun.png)
+
+ Remote Sun is a cool concept i thought of where you, well, remote control the sun. It bascally chnages the collor of the sky and the sun as well as adding a cool zombie [hand.](https://lgarreffa258-code.github.io/cart253/topics/prototypes/conditionals-prototype-1/)
+ [code](https://github.com/lgarreffa258-code/cart253/blob/main/topics/prototypes/conditionals-prototype-1/js/script.js)
 
 ## Links
 [Youtube](https://www.youtube.com/@Lucagarreffazoom) 

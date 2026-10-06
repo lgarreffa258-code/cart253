@@ -8,6 +8,8 @@ Overall, I enjoyed learning about Markdown and working with websites in this way
 
 ## september 22 2026
 This assignment was actually very entertaining. I had a lot of fun trying to learn everything and figure it out. Once I got the hang of things it felt very rewarding. I learned how to make it so that colors chnage as time goes on. I also learned all the different ways you can choose a color for all the different possible shapes. This aasigment allowed me to learn where everything is located while using the variables. One Challenge i faced was trying to figure put everything in the uter wilds themed drawing. I had trouble with the space ship especially but also with making the sun go from orange to red. Overall this was a great experience and it really helped me to learn hands on how the coding works.
+![bla](images/outer%20wilds.png)
  
 ## september 29 2026
 This assignment taught me alot about many many things. one of the first things i learned is  how to make certain variables change when another set of variables does. I leanred this by using map many times untill i understood and was able to use it withought needing guidance. I also figure out how to use when clicked. I leanred how to use whenclicked and then used it to reset the game i made for this project. i also used alot more commiting to main this time around. It was deffinitly one of my favprite things ive done so far. I think this project has really got the lesson and ways to accomplish what i want or need to do engrained in my brain.
+![blu](images/planet%20eater.png)

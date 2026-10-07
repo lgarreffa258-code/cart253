@@ -1,24 +1,116 @@
 /**
- * Title of Project
- * Author Name
- * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * Excalibur 
+ * Luca Garreffa
+ *
+ * time to pull the sword out of the stone
  */
 
-"use strict";
+const Excalibur = {
+    x: 200,
+    y: 200,
+    size: 100,
+    fill: "#ff0000"
+};
+
+const Hand = {
+    x: undefined,
+    y: undefined,
+    size: 75,
+    fill: "#000000"
+};
+
+const Win = {
+    //win area
+    x: 200,
+    y: 50,
+
+
+}
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
-*/
+ * Create the canvas
+ */
 function setup() {
-
+    createCanvas(400, 400);
 }
-
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
-*/
+ * move excalibur and hand, check for overlap
+ */
 function draw() {
+    background("#aaaaaa");
 
+
+    // Move hand
+    moveHand();
+
+    // move excalibur
+    moveExcalibur();
+
+    // Draw the hand and excalibur
+    drawHand();
+    drawExcalibur();
 }
+
+/**
+ * Sets the hand position to the mouse position
+ */
+function moveHand() {
+    Hand.x = mouseX;
+    Hand.y = mouseY;
+}
+
+/**
+ * Displays the hand circle
+ */
+function drawHand() {
+    push();
+    noStroke();
+    fill(Hand.fill);
+    ellipse(Hand.x, Hand.y, Hand.size);
+    pop();
+}
+
+/**
+ * Displays the excalibur circle
+ */
+function drawExcalibur() {
+    push();
+    noStroke();
+    fill(Excalibur.fill);
+    ellipse(Excalibur.x, Excalibur.y, Excalibur.size);
+    pop();
+}
+
+function moveExcalibur() {
+    //distance between excalibur and hand
+    const d = dist(Hand.x, Hand.y, Excalibur.x, Excalibur.y);
+
+    const overlap = (d < Hand.size / 2 + Excalibur.size / 2);
+
+    let positiondifferncex = Hand.x - Excalibur.x
+    let positiondifferncey = Hand.y - Excalibur.y
+
+    if (positiondifferncex < -2) {
+        Excalibur.y = Excalibur.y + 2
+    }
+    if (positiondifferncex > 2) {
+        Excalibur.y = Excalibur.y + 2
+    }
+    if (positiondifferncex = 0) {
+        Excalibur.y = Excalibur.y - 1
+    }
+    if (overlap) {
+        let positiondifferncex = Hand.x - Excalibur.x
+        let positiondifferncey = Hand.y - Excalibur.y
+
+        if (positiondifferncey < 0) {
+            Excalibur.y = Excalibur.y + 0
+        }
+        if (positiondifferncey > -1) {
+            Excalibur.y = Excalibur.y - 1
+        }
+    }
+}
+
+

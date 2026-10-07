@@ -1,8 +1,8 @@
 /**
- * Excalibur 
+ * sissyphus
  * Luca Garreffa
  *
- * time to pull the sword out of the stone
+ * pushing rock i named excalibur up a hill
  */
 
 
@@ -10,8 +10,8 @@ let winner = false
 const Excalibur = {
     x: 200,
     y: 200,
-    size: 50,
-    fill: "#ff0000"
+    size: 100,
+    fill: "#9b7c7c"
 };
 const Hand = {
     x: undefined,
@@ -36,9 +36,7 @@ function setup() {
  * move excalibur and hand, check for overlap
  */
 function draw() {
-    background("#aaaaaa");
-    // win zone vizualization
-    ellipse(Win.x, Win.y, Win.size)
+    background("#237010");
     // Move hand
     moveHand();
     // move excalibur
@@ -48,6 +46,7 @@ function draw() {
     // Draw the hand and excalibur
     drawHand();
     drawExcalibur();
+    win();
 }
 /**
  * Sets the hand position to the mouse position
@@ -82,6 +81,15 @@ function stopExcalibur() {
     console.log(overlap)
     if (overlap) {
         winner = true
+    }
+}
+function win() {
+    if (winner === true) {
+        push()
+        fill("yellow")
+        textSize(32)
+        text("You Win!", 150, 200)
+        pop()
     }
 }
 function moveExcalibur() {

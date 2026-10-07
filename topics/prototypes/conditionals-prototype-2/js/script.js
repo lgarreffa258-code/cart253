@@ -10,17 +10,15 @@ let winner = false
 const Excalibur = {
     x: 200,
     y: 200,
-    size: 100,
+    size: 50,
     fill: "#ff0000"
 };
-
 const Hand = {
     x: undefined,
     y: undefined,
     size: 75,
     fill: "#000000"
 };
-
 const Win = {
     //win area
     x: 200,
@@ -28,38 +26,29 @@ const Win = {
     size: 50
 
 }
-
 /**
  * Create the canvas
  */
 function setup() {
     createCanvas(400, 400);
 }
-
 /**
  * move excalibur and hand, check for overlap
  */
 function draw() {
     background("#aaaaaa");
-
     // win zone vizualization
     ellipse(Win.x, Win.y, Win.size)
-
-
     // Move hand
     moveHand();
-
     // move excalibur
     moveExcalibur();
-
     //stop Excalibur
     stopExcalibur();
-
     // Draw the hand and excalibur
     drawHand();
     drawExcalibur();
 }
-
 /**
  * Sets the hand position to the mouse position
  */
@@ -67,7 +56,6 @@ function moveHand() {
     Hand.x = mouseX;
     Hand.y = mouseY;
 }
-
 /**
  * Displays the hand circle
  */
@@ -78,7 +66,6 @@ function drawHand() {
     ellipse(Hand.x, Hand.y, Hand.size);
     pop();
 }
-
 /**
  * Displays the excalibur circle
  */
@@ -96,19 +83,14 @@ function stopExcalibur() {
     if (overlap) {
         winner = true
     }
-
 }
-
 function moveExcalibur() {
     //distance between excalibur and hand
     const d = dist(Hand.x, Hand.y, Excalibur.x, Excalibur.y);
-
     const overlap = (d < Hand.size / 2 + Excalibur.size / 2);
-
     let positiondifferncex = Hand.x - Excalibur.x
     let positiondifferncey = Hand.y - Excalibur.y
     if (winner === false) {
-
         if (positiondifferncex < -2) {
             Excalibur.y = Excalibur.y + 2
         }

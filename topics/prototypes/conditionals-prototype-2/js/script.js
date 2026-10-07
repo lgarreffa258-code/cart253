@@ -5,6 +5,8 @@
  * time to pull the sword out of the stone
  */
 
+
+let winner = false
 const Excalibur = {
     x: 200,
     y: 200,
@@ -23,7 +25,7 @@ const Win = {
     //win area
     x: 200,
     y: 50,
-
+    size: 50
 
 }
 
@@ -40,12 +42,18 @@ function setup() {
 function draw() {
     background("#aaaaaa");
 
+    // win zone vizualization
+    ellipse(Win.x, Win.y, Win.size)
+
 
     // Move hand
     moveHand();
 
     // move excalibur
     moveExcalibur();
+
+    //stop Excalibur
+    stopExcalibur();
 
     // Draw the hand and excalibur
     drawHand();
@@ -81,6 +89,15 @@ function drawExcalibur() {
     ellipse(Excalibur.x, Excalibur.y, Excalibur.size);
     pop();
 }
+function stopExcalibur() {
+    const d = dist(Excalibur.x, Excalibur.y, Win.x, Win.y);
+    const overlap = (d < Win.size / 2);
+    console.log(overlap)
+    if (overlap) {
+        winner = true
+    }
+
+}
 
 function moveExcalibur() {
     //distance between excalibur and hand
@@ -90,27 +107,38 @@ function moveExcalibur() {
 
     let positiondifferncex = Hand.x - Excalibur.x
     let positiondifferncey = Hand.y - Excalibur.y
+    if (winner === false) {
 
-    if (positiondifferncex < -2) {
-        Excalibur.y = Excalibur.y + 2
-    }
-    if (positiondifferncex > 2) {
-        Excalibur.y = Excalibur.y + 2
-    }
-    if (positiondifferncex = 0) {
-        Excalibur.y = Excalibur.y - 1
-    }
-    if (overlap) {
-        let positiondifferncex = Hand.x - Excalibur.x
-        let positiondifferncey = Hand.y - Excalibur.y
-
-        if (positiondifferncey < 0) {
-            Excalibur.y = Excalibur.y + 0
+        if (positiondifferncex < -2) {
+            Excalibur.y = Excalibur.y + 2
         }
-        if (positiondifferncey > -1) {
+        if (positiondifferncex > 2) {
+            Excalibur.y = Excalibur.y + 2
+        }
+        if (positiondifferncex = 0) {
             Excalibur.y = Excalibur.y - 1
         }
+        if (overlap) {
+            let positiondifferncex = Hand.x - Excalibur.x
+            let positiondifferncey = Hand.y - Excalibur.y
+
+            if (positiondifferncey < 0) {
+                Excalibur.y = Excalibur.y + 0
+            }
+            if (positiondifferncey > -1) {
+                Excalibur.y = Excalibur.y - 1
+            }
+        }
+    }
+    if (winner === true) {
+        Excalibur.x = Win.x
+        Excalibur.y = Win.y
     }
 }
+
+
+
+
+
 
 

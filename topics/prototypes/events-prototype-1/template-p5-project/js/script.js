@@ -34,13 +34,20 @@ let startbutton = {
     //size
     size:300
 }
+let winzone = {
+    //placement
+    x:1100,
+    y:250,
+    //size
+    size: 600
+}
 
 
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
 function setup() {
-createCanvas(1500, 500)
+createCanvas(1000, 500)
 }
 
 
@@ -68,6 +75,12 @@ fill("yellow")
 ellipse(startbutton.x, startbutton.y, startbutton.size)
 pop()
 
+//making the win zone
+push()
+noStroke()
+fill("red")
+ellipse(winzone.x, winzone.y, winzone.size)
+
 //making the text
 if (showtext === true){
 push()
@@ -77,14 +90,18 @@ text('START', 550, 269)
 pop()
 }
 
+//making the win screen
+if (win === true){
+    background("yellow")
+    textSize(200)
+    text('YOU WIN', 250,  250)
+}
+
 //make the race start
 if (race === true){
     racer2.x = racer2.x + 1
 }
 }
-
-
-
 
 function mousePressed(){
     const d = dist(mouseX, mouseY, startbutton.x, startbutton.y)
@@ -102,5 +119,11 @@ if (overlap2) {
     racer1.x = racer1.x +15
 }
 }
-
+function overlap (){
+    const d = dist(racer1.x, racer1.y, winzone.x, winzone.y)
+    const overlap = (d < winzone.size / 2)
+    if (overlap) {
+        win = true
+    }
+}
 

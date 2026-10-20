@@ -10,6 +10,9 @@ let race = false
 
 let showtext = true
 
+let win = false
+let lose = false
+
 let racer1 = {
     //placement
     x:0,
@@ -78,9 +81,10 @@ pop()
 if (race === true){
     racer2.x = racer2.x + 1
 }
-
-
 }
+
+
+
 
 function mousePressed(){
     const d = dist(mouseX, mouseY, startbutton.x, startbutton.y)

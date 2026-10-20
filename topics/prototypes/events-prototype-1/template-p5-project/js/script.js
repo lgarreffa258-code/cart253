@@ -10,8 +10,6 @@ let race = false
 
 let showtext = true
 
-let win = false
-let lose = false
 
 let racer1 = {
     //placement
@@ -90,13 +88,6 @@ text('START', 550, 269)
 pop()
 }
 
-//making the win screen
-if (win === true){
-    background("yellow")
-    textSize(200)
-    text('YOU WIN', 250,  250)
-}
-
 //make the race start
 if (race === true){
     racer2.x = racer2.x + 1
@@ -118,12 +109,5 @@ const overlap2 = (D < racer1.size / 2)
 if (overlap2) {
     racer1.x = racer1.x +15
 }
-}
-function overlap (){
-    const d = dist(racer1.x, racer1.y, winzone.x, winzone.y)
-    const overlap = (d < winzone.size / 2)
-    if (overlap) {
-        win = true
-    }
 }
 

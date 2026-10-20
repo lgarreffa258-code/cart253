@@ -1,9 +1,8 @@
 /**
- * Title of Project
- * Author Name
+ * Race
+ * Luca Garreffa
  * 
- * HOW EMBARRASSING! I HAVE NO DESCRIPTION OF MY PROJECT!
- * PLEASE REMOVE A GRADE FROM MY WORK IF IT'S GRADED!
+ * made a race where you click to win
  */
 
 "use strict";

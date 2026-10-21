@@ -21,6 +21,14 @@ let sun = {
     b:0,
 }
 
+let place1 = {
+    //placement
+    x:250,
+    y:400,
+    //size
+    size:100,
+}
+
 let sky = {
     //color
     r:0,
@@ -53,6 +61,13 @@ createCanvas(500, 500)
 */
 function draw() {
     background(sky.r, sky.g, sky.b)
+    
+    //making the first location
+    push()
+    noStroke()
+    fill(sky.r, sky.g, sky.b)
+    ellipse(place1.x, place1.y, place1.size)
+    pop()
 
     //the sun
     push()
@@ -69,6 +84,7 @@ function draw() {
     fill(floor.r, floor.g, floor.b)
     rect(floor.x, floor.y, floor.size)
     pop()
+
 }
 
 function mousePressed() {
@@ -76,5 +92,12 @@ function mousePressed() {
     const overlap = (d < sun.size/2)
     if (overlap) {
         transition = true
+    }
+    const D = dist(sun.x, sun.y, place1.x, place1.y)
+    const overlap2 = (D < place1.size/2)
+    if (overlap2) {
+        transition = false
+        sun.x = 250
+        sun.y = 350
     }
 }

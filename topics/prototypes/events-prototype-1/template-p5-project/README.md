@@ -1,6 +1,6 @@
 # TITLE OF PROJECT
 
-AUTHOR NAME
+Luca Garreffa
 
 [View this project online](URL_FOR_THE_RUNNING_PROJECT)
 

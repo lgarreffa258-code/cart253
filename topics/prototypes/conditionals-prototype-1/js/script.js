@@ -123,8 +123,8 @@ function draw() {
 function mousePressed() {
 
     //check if the sun was clicked
-    const D = dist(mouseX, mouseY, sun.x, sun.y)
-    const overlap = (D < sun.size / 2)
+    const d = dist(mouseX, mouseY, sun.x, sun.y)
+    const overlap = (d < sun.size / 2)
     if (overlap) {
         if (night === false) {
             sun.r = 246;

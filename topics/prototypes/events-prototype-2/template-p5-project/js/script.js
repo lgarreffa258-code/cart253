@@ -7,6 +7,7 @@
  */
 
 "use strict";
+let transition = false
 
 let sun = {
     //placement
@@ -27,6 +28,18 @@ let sky = {
     b:255
 }
 
+let floor = {
+    //placement
+    x:0,
+    y:400,
+    //color
+    r:0,
+    g:0,
+    b:150,
+    //size
+    size:500
+}
+
 /**
  * OH LOOK I DIDN'T DESCRIBE SETUP!!
 */
@@ -45,4 +58,23 @@ function draw() {
     push()
     fill(sun.r, sun.g, sun.b)
     ellipse(sun.x, sun.y, sun.size)
+    pop()
+     if (transition === true){
+        sun.x = mouseX
+        sun.y = mouseY
+    }
+
+    //bottom layer floor or ocean
+    push()
+    fill(floor.r, floor.g, floor.b)
+    rect(floor.x, floor.y, floor.size)
+    pop()
+}
+
+function mousePressed() {
+    const d = dist(mouseX, mouseY, sun.x, sun.y)
+    const overlap = (d < sun.size/2)
+    if (overlap) {
+        transition = true
+    }
 }

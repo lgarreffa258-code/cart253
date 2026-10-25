@@ -8,10 +8,6 @@
 "use strict";
 let transition = false
 
-// Remember the last location to snap back to if dropped in an invalid spot
-let lastValidX = 250
-let lastValidY = 150
-
 let sun = {
     //placement
     x: 250,
@@ -63,14 +59,14 @@ let floor = {
 let currentSetting = 0
 
 /**
- * OH LOOK I DIDN'T DESCRIBE SETUP!!
+make the canvas
 */
 function setup() {
     createCanvas(500, 500)
 }
 
 /**
- * OOPS I DIDN'T DESCRIBE WHAT MY DRAW DOES!
+draw the sun and sky and floor
 */
 function draw() {
     // Change the sky color based on where the sun is placed

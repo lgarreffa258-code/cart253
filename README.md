@@ -36,8 +36,12 @@ Smiley Face. I felt like I got intense in the other ones so I made a [happy face
  [code](https://github.com/lgarreffa258-code/cart253/blob/main/topics/prototypes/conditionals-prototype-1/js/script.js)
 
 ![rockhill](images/rockhill.png)
-ROck hill is a very simple project. I used some code that allowed me to push objects and then made it so if you were dirrectly behind the rock it would fall. if you make to the top you [win.](https://lgarreffa258-code.github.io/cart253/topics/prototypes/conditionals-prototype-2/)
+Rock hill is a very simple project. I used some code that allowed me to push objects and then made it so if you were dirrectly behind the rock it would fall. if you make to the top you [win.](https://lgarreffa258-code.github.io/cart253/topics/prototypes/conditionals-prototype-2/)
 [code](https://github.com/lgarreffa258-code/cart253/blob/main/topics/prototypes/conditionals-prototype-2/js/script.js)
+
+![itfollows](images/your%20followed.png)
+For this one i decided to go very simle and make a game where you have to run away from a monster. I was having trouble withthe code so i copy pasted some stuff from other works and made it do what I [wanted.](https://lgarreffa258-code.github.io/cart253/topics/prototypes/conditionals-prototype-3/)
+[code]()
 
 ## Links
 [Youtube](https://www.youtube.com/@Lucagarreffazoom) 

@@ -174,8 +174,6 @@ function mousePressed() {
         if (overlap1) {
             sun.x = place1.x
             sun.y = place1.y
-            lastValidX = sun.x
-            lastValidY = sun.y
             currentSetting = 1
             transition = false
         }
@@ -183,8 +181,6 @@ function mousePressed() {
         if (overlap2) {
             sun.x = place2.x
             sun.y = place2.y
-            lastValidX = sun.x
-            lastValidY = sun.y
             currentSetting = 2
             transition = false
         }

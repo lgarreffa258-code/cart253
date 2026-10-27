@@ -51,32 +51,32 @@ For this one i decided to go very simle and make a game where you have to run aw
 
 ![race](images/race.png)
 
-this is a very simple race when you have to click the ball to try and beat the other [ball.](https://lgarreffa258-code.github.io/cart253/topics/prototypes/events-prototype-1/)
+this is a very simple race when you have to click the ball to try and beat the other [ball.](https://lgarreffa258-code.github.io/cart253/topics/prototypes/events-prototype-1/template-p5-project/)
 [code](https://github.com/lgarreffa258-code/cart253/blob/main/topics/prototypes/events-prototype-1/template-p5-project/js/script.js)
 
 ![sunpos](images/sunpos.png)
 
-this is one of my favorites where you grab the sun and put it in different positions to make the time change and the [background.](https://lgarreffa258-code.github.io/cart253/topics/prototypes/events-prototype-1/)
+this is one of my favorites where you grab the sun and put it in different positions to make the time change and the [background.](https://lgarreffa258-code.github.io/cart253/topics/prototypes/events-prototype-1/template-p5-project/)
 [code](https://github.com/lgarreffa258-code/cart253/blob/main/topics/prototypes/events-prototype-2/template-p5-project/js/script.js)
 
 ![fall](images/fall.png)
 
-the point of this one is to stop the ball from hitting the ground. the velocity increases as you keep succeding. if you fail its game [over.](https://lgarreffa258-code.github.io/cart253/topics/prototypes/events-prototype-3/)
+the point of this one is to stop the ball from hitting the ground. the velocity increases as you keep succeding. if you fail its game [over.](https://lgarreffa258-code.github.io/cart253/topics/prototypes/events-prototype-3/template-p5-project/)
 [code](https://github.com/lgarreffa258-code/cart253/blob/main/topics/prototypes/events-prototype-3/template-p5-project/js/script.js)
 
 ![flower](images/flower.png)
 
-clicks allow you to grow flowers very [simple.](https://lgarreffa258-code.github.io/cart253/topics/prototypes/functions-prototype-1/)
+clicks allow you to grow flowers very [simple.](https://lgarreffa258-code.github.io/cart253/topics/prototypes/functions-prototype-1/template-p5-project/)
 [code](https://github.com/lgarreffa258-code/cart253/blob/main/topics/prototypes/functions-prototype-1/template-p5-project/js/script.js)
 
 ![light](images/switch.png)
 
-theres a light witch and everytime you click it, the light turns off and [on.](https://lgarreffa258-code.github.io/cart253/topics/prototypes/functions-prototype-2/)
+theres a light witch and everytime you click it, the light turns off and [on.](https://lgarreffa258-code.github.io/cart253/topics/prototypes/functions-prototype-2/template-p5-project/)
 [code](https://github.com/lgarreffa258-code/cart253/blob/main/topics/prototypes/functions-prototype-2/template-p5-project/js/script.js)
 
 ![ball](images/move.png)
 
-when you click the ball it goes to a random location and chnages whe you click again. the size also shrinks and then resetes after a [while.](https://lgarreffa258-code.github.io/cart253/topics/prototypes/functions-prototype-3/)
+when you click the ball it goes to a random location and chnages whe you click again. the size also shrinks and then resetes after a [while.](https://lgarreffa258-code.github.io/cart253/topics/prototypes/functions-prototype-3/template-p5-project/)
 [code](https://github.com/lgarreffa258-code/cart253/blob/main/topics/prototypes/functions-prototype-3/template-p5-project/js/script.js)
 
 ## Links
